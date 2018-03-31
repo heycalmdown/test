@@ -1,0 +1,15 @@
+mq1:
+  image: rabbitmq:3.6-management
+  hostname: mq1
+  environment:
+    - RABBITMQ_ERLANG_COOKIE=xyz
+  ports:
+    - 15672:15672
+    - 5672:5672
+mq2:
+  image: rabbitmq:3.6-management
+  hostname: mq2
+  environment:
+    - RABBITMQ_ERLANG_COOKIE=xyz
+  links:
+    - mq1
