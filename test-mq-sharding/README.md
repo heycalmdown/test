@@ -9,9 +9,7 @@ $ ./publish.sh
 $ open http://localhost:15672/#/queues
 ```
 
-## Consuming from pseudo-queue
+## Consuming
 
-```bash
-$ npm i
-$ node .
-```
+* [consumer-js](./consumer-js)
+* [consumer-ex](./consumer-ex)
